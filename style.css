@@ -127,10 +127,25 @@ nav {
     gap: 50px;
 }
 
+/* .about-img {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+} */
 .about-img {
     flex: 1;
     border-radius: 10px;
     overflow: hidden;
+    max-width: 330px;  /* Limit maximum width */
+    /* height: 400px;     Set fixed height */
+}
+
+/* Add this to ensure the image fits properly inside the container */
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 .about-text {
